@@ -1,15 +1,16 @@
-// src/components/ProductCard.tsx
-import { useContext } from 'react';
+// src/components/ProductDetails.tsx
+import React, { useContext } from 'react';
 import { CartContext } from '../contectx/CartContext';
 
-interface ProductCardProps {
+interface ProductDetailsProps {
   id: number;
   name: string;
   description: string;
   price: number;
+  imageUrl: string;
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({ id, name, description, price }) => {
+const ProductDetails: React.FC<ProductDetailsProps> = ({ id, name, description, price, imageUrl }) => {
   const cartContext = useContext(CartContext);
 
   const handleAddToCart = () => {
@@ -20,14 +21,15 @@ const ProductCard: React.FC<ProductCardProps> = ({ id, name, description, price 
 
   return (
     <div className="card">
+      <img src={imageUrl} alt={name} className="card-img-top" />
       <div className="card-body">
         <h5 className="card-title">{name}</h5>
         <p className="card-text">{description}</p>
-        <p className="card-text"><strong>{price}</strong></p>
+        <p className="card-text"><strong>{price} руб.</strong></p>
         <button className="btn btn-primary" onClick={handleAddToCart}>Добавить в корзину</button>
       </div>
     </div>
   );
 };
 
-export default ProductCard;
+export default ProductDetails;

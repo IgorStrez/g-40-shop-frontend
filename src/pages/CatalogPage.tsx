@@ -1,24 +1,25 @@
+// src/pages/Catalog.tsx
+import ProductDetails from '../components/ProductDetails';
 
-import ProductCard from '../components/ProductCard';
-
-const products = [
-  { id: 1, name: 'Книга 1', description: 'Описание книги 1', price: '500₽' },
-  { id: 2, name: 'Книга 2', description: 'Описание книги 2', price: '600₽' },
-  { id: 3, name: 'Сувенир 1', description: 'Описание сувенира 1', price: '300₽' },
-  // Добавьте больше продуктов по необходимости
+const sampleProducts = [
+  { id: 1, name: 'Книга 1', description: 'Описание книги 1', price: 500, imageUrl: 'link-to-image1.jpg' },
+  { id: 2, name: 'Сувенир 1', description: 'Описание сувенира 1', price: 300, imageUrl: 'link-to-image2.jpg' },
+  // Добавьте другие продукты
 ];
 
-const CatalogPage = () => (
-  <div className="container py-5">
-    <h1>Каталог</h1>
-    <div className="row">
-      {products.map(product => (
-        <div key={product.id} className="col-md-4 mb-4">
-          <ProductCard {...product} />
-        </div>
-      ))}
+const Catalog = () => {
+  return (
+    <div className="container">
+      <h2>Каталог</h2>
+      <div className="row">
+        {sampleProducts.map(product => (
+          <div className="col-md-4" key={product.id}>
+            <ProductDetails {...product} />
+          </div>
+        ))}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
-export default CatalogPage;
+export default Catalog;
