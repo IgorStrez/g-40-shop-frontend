@@ -1,17 +1,22 @@
 // src/pages/Login.tsx
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate  } from 'react-router-dom';
 
-const Login: React.FC = () => {
+const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate ();
 
-  const handleLogin = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Добавьте логику для авторизации пользователя
-    // Если успешно, перенаправить пользователя на главную страницу
-    navigate('/');
+  const handleLogin = () => {
+    // Пример логики аутентификации
+    if (email === 'email' && password === 'password') {
+      // Сохранение информации о пользователе
+      localStorage.setItem('isAuthenticated', 'true');
+      // Перенаправление на главную страницу
+      navigate('/');
+    } else {
+      alert('Неправильный логин или пароль');
+    }
   };
 
   return (

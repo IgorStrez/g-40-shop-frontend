@@ -9,7 +9,7 @@ const Header = () => (
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav me-auto">
             <li className="nav-item">
               <Link to="/" className="nav-link">Главная</Link>
             </li>
@@ -18,6 +18,14 @@ const Header = () => (
             </li>
             <li className="nav-item">
               <Link to="/about" className="nav-link">О нас</Link>
+            </li>
+          </ul>
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link to="/login" className="nav-link">Вход</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/register" className="nav-link">Регистрация</Link>
             </li>
           </ul>
         </div>
