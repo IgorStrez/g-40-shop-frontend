@@ -2,9 +2,10 @@
 import ProductDetails from '../components/ProductDetails';
 
 const sampleProducts = [
-  { id: 1, name: 'Книга 1', description: 'Описание книги 1', price: 500, imageUrl: 'link-to-image1.jpg' },
-  { id: 2, name: 'Сувенир 1', description: 'Описание сувенира 1', price: 300, imageUrl: 'link-to-image2.jpg' },
-  // Добавьте другие продукты
+  { id: 1, name: 'Книга', description: 'Том №1', price: 500, imageUrl: 'link-to-image1.jpg' },
+  { id: 2, name: 'Сувенир', description: 'Кружка СПМ', price: 300, imageUrl: 'link-to-image2.jpg' },
+  { id: 3, name: 'Театральный билет', description: 'Билет в Театр', price: 400, imageUrl: 'url_to_some_image' },
+  // Добавить другие продукты
 ];
 
 const Catalog = () => {

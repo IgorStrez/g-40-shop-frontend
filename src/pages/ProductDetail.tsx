@@ -1,11 +1,13 @@
 // src/pages/ProductDetail.tsx
+import React from 'react';
+import '../styles/ProductDetail.css';
 import { useParams } from 'react-router-dom';
 import ProductDetails from '../components/ProductDetails';
 
-const ProductDetail = () => {
+const ProductDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
 
-  // Пример данных о продукте, которые вы можете заменить на данные из вашего API
+  // Пример данных о продукте, которые вы можно заменить на данные из API
   const product = {
     id: parseInt(id!, 10),
     name: "Пример книги",
@@ -15,7 +17,7 @@ const ProductDetail = () => {
   };
 
   return (
-    <div>
+    <div className="product-detail-container">
       <ProductDetails
         id={product.id}
         name={product.name}

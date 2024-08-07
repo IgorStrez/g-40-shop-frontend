@@ -1,6 +1,8 @@
 // src/components/ProductDetails.tsx
 import React, { useContext } from 'react';
 import { CartContext } from '../contectx/CartContext';
+import '../styles/ProductDetail.css';
+
 
 interface ProductDetailsProps {
   id: number;

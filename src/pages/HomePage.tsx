@@ -5,9 +5,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '/src/styles/HomePage.css';
 
 const products = [
-  { id: 1, name: 'Категория 1', description: 'Описание товаров категории 1.', imageUrl: 'url_to_some_image' },
-  { id: 2, name: 'Категория 2', description: 'Описание товаров категории 2.', imageUrl: 'url_to_some_image' },
-  { id: 3, name: 'Категория 3', description: 'Описание товаров категории 3.', imageUrl: 'url_to_some_image' },
+  { id: 1, name: 'Книга', description: 'Том №1', imageUrl: 'url_to_some_image' },
+  { id: 2, name: 'Сувенир', description: 'Кружка СПМ', imageUrl: 'url_to_some_image' },
+  { id: 3, name: 'Театральный билет', description: 'Билет в Театр', imageUrl: 'url_to_some_image' },
 ];
 
 const HomePage = () => {
@@ -15,8 +15,9 @@ const HomePage = () => {
     <Container className="container">
       <Row>
         <Col>
-          <h1 className="home-header">Добро пожаловать в Мистический Магазин Мавроди!</h1>
-          <p className="home-description">Добро пожаловать в наш магазин Книг и Сувениров, наполненные Тайной и Мистикой. У нас вы найдете уникальные товары, связанные с наследием Сергея Мавроди.</p>
+          <h1 className="home-header">Мистический Магазин Мавроди приветствует Вас!</h1>
+          <p className="home-description">Вы найдете у нас уникальные товары, связанные с наследием Сергея Мавроди.</p>
+          <p className="home-description">В нашем Магазине всё наполнено Тайной и Мистикой.</p>
         </Col>
       </Row>
       <Row className="mt-5">
