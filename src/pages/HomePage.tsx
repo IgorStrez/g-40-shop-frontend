@@ -2,7 +2,7 @@
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles/HomePage.css'; 
+import '/src/styles/HomePage.css';
 
 const products = [
   { id: 1, name: 'Категория 1', description: 'Описание товаров категории 1.', imageUrl: 'url_to_some_image' },

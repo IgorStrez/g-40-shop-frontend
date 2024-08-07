@@ -1,4 +1,6 @@
+// src/components/Header.tsx
 import { Link } from 'react-router-dom';
+import '/src/styles/Header.css';
 
 const Header = () => (
   <header>
