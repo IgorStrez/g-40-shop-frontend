@@ -8,6 +8,7 @@ import AboutPage from './pages/AboutPage';
 import Cart from './components/Cart';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Footer from './components/Footer';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -22,6 +23,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>
+      <Footer />
     </Router>
   </React.StrictMode>
 );

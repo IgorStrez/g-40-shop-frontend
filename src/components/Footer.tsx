@@ -1,16 +1,14 @@
+// src/components/Footer.tsx
+import React from 'react';
+import '../styles/Footer.css';
 
-const Footer = () => (
-  <footer style={{ backgroundColor: '#000', color: '#fff' }} className="py-4">
-    <div className="container text-center">
-      <p>© {new Date().getFullYear()} Мистический Магазин Мавроди</p>
-      <p>
-        <a href="mailto:info@mavrodi.com" style={{ color: '#fff' }}>info@mavrodi.com</a>
-      </p>
-      <p>
-        <a href="/privacy-policy" style={{ color: '#fff' }}>Политика конфиденциальности</a>
-      </p>
-    </div>
-  </footer>
-);
+const Footer: React.FC = () => {
+  return (
+    <footer className="footer">
+      <p>&copy; 2024 Мистический Магазин Мавроди. Все права защищены.</p>
+      <p>Контакты: info@mysticshop.com | Телефон: +7 (123) 456-78-90</p>
+    </footer>
+  );
+};
 
 export default Footer;
