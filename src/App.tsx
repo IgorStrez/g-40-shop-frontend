@@ -1,25 +1,19 @@
 // src/App.tsx
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
-import Catalog from './pages/CatalogPage';
 import ProductDetail from './pages/ProductDetail';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Login from './pages/Login';
+import Register from './pages/Register';
 
-const App = () => {
+function App() {
   return (
-    <Router>
-      <div>
-        <Header />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/catalog" element={<Catalog />} />
-          <Route path="/product/:id" element={<ProductDetail />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/product/:id" element={<ProductDetail />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+    </Routes>
   );
-};
+}
 
 export default App;

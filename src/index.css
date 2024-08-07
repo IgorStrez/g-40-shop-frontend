@@ -1,29 +1,32 @@
 body {
-  background-color: #111; /* Тёмный фон */
-  color: #ddd; /* Светлый текст */
-  font-family: Arial, sans-serif; /* Пример шрифта */
+  background-color: #f8f9fa; /* Светлый фон */
+  color: #333; /* Основной цвет текста */
 }
 
-header, footer {
-  background-color: #222; /* Немного светлее для контраста */
-  padding: 20px;
+/* Стили для Navbar */
+.navbar-light {
+  background-color: #007bff; /* Синий фон Navbar */
 }
 
-.navbar-brand, .nav-link {
-  color: #f0c040; /* Золотистый акцент */
+.navbar-light .navbar-brand,
+.navbar-light .nav-link {
+  color: #fff; /* Белый цвет текста и ссылок */
 }
 
-.card {
-  background-color: #333; /* Тёмный фон для карточек */
-  border: 1px solid #444; /* Обводка */
-}
-
-.button {
-  background-color: #f44336; /* Красный для кнопок */
-  color: white;
+/* Стили для кнопок */
+.btn-custom {
+  background-color: #007bff;
   border: none;
+  color: #fff;
 }
 
-.button:hover {
-  background-color: #c33;
+.btn-custom:hover {
+  background-color: #0056b3;
+}
+
+/* Стили для карточек */
+.card {
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
